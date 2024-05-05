@@ -1,0 +1,15 @@
+{
+  "name": "user-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scavvv13/secureTrack.git"
+  },
+  "author": "scave",
+  "license": "ISC",
+  "description": "Capstone Project"
+}
