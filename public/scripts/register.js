@@ -1,4 +1,4 @@
-format.addEventListener("submit", () => {
+form.addEventListener("submit", () => {
     const register = {
         email: email.value,
         password: password.value
@@ -22,4 +22,3 @@ format.addEventListener("submit", () => {
         }
     })
 })
-
