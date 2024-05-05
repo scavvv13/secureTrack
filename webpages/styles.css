@@ -1,0 +1,130 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s ease; /* Smooth transition effect */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Set background color to black and text color to white */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Center the title vertically and horizontally */
+#title {
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    z-index: 1; /* Ensure title is above map */
+    transform: translate(-50%, -50%);
+   
+}
+
+/* Style the title */
+#title {
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Style the navbar container */
+#navbar-container {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1; /* Ensure navbar is above map */
+   
+}
+
+/* Style the navbar */
+#navbar {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.059); /* semi-transparent black */
+    border-radius: 50px; /* Adjust the border-radius for the rounded corners */
+    overflow: hidden;
+}
+
+/* Style the buttons */
+#navbar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    outline: none;
+    transition: color 0.3s;
+}
+
+#navbar button:hover {
+    color: #aaa; /* light gray on hover */
+}
+
+#map-container {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow for circular shape */
+    border-radius: 50%; /* Make it circular */
+    transform: translate(-50%, -50%);
+   
+}
+
+/* Embedded Google Map */
+#map-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove iframe border */
+}
+
+#drawer {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Adjust to hide initially */
+    width: 250px; /* Adjust drawer width as needed */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    transition: right 0.3s ease; /* Smooth transition */
+    z-index: 2; /* Ensure drawer is above other content */
+}
+
+#drawer-content {
+    padding: 50px;
+}
+
+#drawer-content h2 {
+    padding: 50px;
+}
+
+
+/* Person icon styles */
+#settings-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2; /* Ensure icon is above other content */
+}
+
+#cargo {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

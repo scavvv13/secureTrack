@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureTrack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="title">SecureTrack</div>
+    
+    <div id="drawer">
+        <!-- Drawer content -->
+        <div id="drawer-content">
+            <!-- Your settings content goes here -->
+            <h2>Settings</h2>   
+            <div id ="settings-buttons">
+                <p>Setting 1</p>
+                <p>Setting 2</p>
+                <p>Setting 3</p>
+            </div>
+        </div>
+    </div>
+   
+    <img id="settings-icon" src="assets/image.png" height="45px" weight="45px" alt ="Settings" onclick="toggleDrawer()">
+   
+    <div id="contents" class="fade-content">
+        <div id="map-container">
+        <!-- Embedded Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199364.48813201645!2d-118.6919225!3d34.0201613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf9a16d0a931!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2suk!4v1616768327349!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div id="navbar-container">
+        <div id="navbar">
+            <button onclick="navigateTo('package.html')">Package</button>
+            <button onclick="navigateTo('location.html')">Location</button>
+            <button onclick="navigateTo('specification.html')">Specification</button>
+            <button onclick="navigateTo('logout.html')">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
