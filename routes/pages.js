@@ -1,10 +1,11 @@
 const express = require("express");
-const loggedin = require("../controllers/loggedin")
+const loggedin = require("../controllers/loggedIn")
+const logout = require("../controllers/logout");
 const router = express.Router();
 
 router.get("/", loggedin, (req, res) => {
     if(req.user) {
-        res.render("index", {status:"loggedin", user:req.user});
+        res.render("index", {status:"loggedIn", user:req.user});
     } else {
     res.render("index", {status:"no", user:"nothing"});
     }
@@ -17,5 +18,7 @@ router.get("/register", (req, res) => {
 router.get("/login", (req, res) => {
     res.sendFile("login.html", {root: "./public"});
 })
+
+router.get("/logout", logout);
 
 module.exports = router;
