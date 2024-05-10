@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 5001;
 
 app.use("/scripts", express.static(__dirname + "/public/scripts"));
 app.use("/css", express.static(__dirname + "/public/css"));
+app.use("/pages", express.static(__dirname + "/webpages"));
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
@@ -22,3 +23,5 @@ db.connect((err) => {
 app.use("/", require("./routes/pages"));    
 app.use("/api", require("./controllers/auth"));
 app.listen(PORT);
+
+

@@ -1,0 +1,141 @@
+/* styles.css */
+
+/* Black background */
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card styling */
+.card {
+    background-color: #333; /* Card background color */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 20px; /* Add padding */
+    width: 100% ; 
+    margin: 0 auto; /* Center align card */
+}
+
+.card-title {
+    margin-bottom: 20px; /* Add margin below title */
+    margin-top: 10px;
+    font-size: 35px; /* Card title font size */
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif; /* Specify the font family */
+    text-align: center; /* Center align title */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add margin below form inputs */
+}
+
+label {
+    display: block; /* Display labels as block */
+    margin-bottom: 10px; /* Add margin below labels */
+}
+
+.form-control {
+    width: 100%; /* Set form controls to full width */
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    border-radius: 4px; /* Add border radius */
+    border: 1px solid #666; /* Add border */
+    background-color: #444; /* Form controls background color */
+    color: white; /* Form controls text color */
+    margin-bottom: 15px; /* Add margin below form controls */
+}
+
+.form-control:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #888; /* Change border color on focus */
+}
+
+.invalid-feedback {
+    display: none; /* Hide by default */
+    color: #ff5555; /* Error message color */
+    margin-top: 5px; /* Add margin above error message */
+    font-size: 14px; /* Error message font size */
+}
+
+.btn-primary {
+    width: 100%; /* Set button to full width */
+    padding: 10px; /* Add padding */
+    border: 2px solid white; /* Add white border with thickness 2px */
+    border-radius: 4px; /* Add border radius */
+    background-color: black; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    color: #999;
+}
+
+/* Error and success alert styling */
+.alert {
+    display: none; /* Hide by default */
+    padding: 10px 20px; /* Add padding */
+    margin-bottom: 20px; /* Add margin */
+    border-radius: 4px; /* Add border radius */
+}
+
+.alert-danger {
+    background-color: #ff4444; /* Red background color for error */
+    color: white; /* Text color */
+}
+
+.alert-success {
+    background-color: #00C851; /* Green background color for success */
+    color: white; /* Text color */
+}
+
+/* Animation for alerts */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.alert.slide-in {
+    display: block;
+    animation: slideIn 0.5s forwards;
+}
+
+/* Animation for button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-primary.pulse {
+    animation: pulse 1s infinite;
+}
